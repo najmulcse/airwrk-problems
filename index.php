@@ -4,16 +4,24 @@ require_once __DIR__ .'/vendor/autoload.php';
 
 use Airwrk\LiveCoding\Problem1;
 use Airwrk\LiveCoding\Problem3;
+use Airwrk\LiveCoding\Problem2;
 
 try{
 
-    echo "problem 3: ";
-    $revCount = (new Problem3())->getDistinctCount([1,13,10,12,31]);
+    echo "\nproblem 3: \n";
+    $revCount = (new Problem3())->reverseAndAdd(array(1, 13, 10, 12, 31));
 
-    echo $revCount;
+    echo "\n" .$revCount. "\n";
 
 
-    echo "Problem 1:";
+    echo "\n Problem 2: \n";
+    $revCount = (new Problem2())->fizzBuzz(15);
+
+    echo "<pre>";
+    print_r( $revCount);
+
+
+    echo "\nProblem 1:\n";
 
     $movingZero = ( new Problem1())->solveMovingZero([0,1,0,3, 12]);
 
