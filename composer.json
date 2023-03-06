@@ -1,0 +1,15 @@
+{
+    "name": "airwrk/livecoding",
+    "autoload": {
+        "psr-4": {
+            "Airwrk\\LiveCoding\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Najmul",
+            "email": "najmul2022@gmail.com"
+        }
+    ],
+    "require": {}
+}
